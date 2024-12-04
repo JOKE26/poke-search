@@ -1,0 +1,40 @@
+#search-bar {
+  display: flex;
+  background-color: white;
+  border-radius: 40px;
+  margin: 50px auto;
+  box-shadow: 3px 3px 10px -3px grey;
+  overflow: hidden;
+  width: 50%;
+}
+
+button {
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: rgb(205, 205, 255);
+  width: 40px;
+  cursor: pointer;
+}
+
+input {
+  all: unset;
+  flex-grow: 1;
+  padding: 10px 20px;
+}
+
+button img {
+  max-width: 23px;
+  max-height: 23px;
+}
+
+button:hover {
+  background-color: rgb(179, 179, 255);
+}
+
+@media screen and (max-width: 800px) {
+  #search-bar {
+    width: 100%;
+  }
+}
