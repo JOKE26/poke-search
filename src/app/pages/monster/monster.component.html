@@ -98,10 +98,8 @@
       }
     </div>
     <div class="button-container">
-      <button mat-button (click)="navigateBack()">Back</button>
-      <button mat-flat-button type="submit" [disabled]="formGroup.invalid">
-        Save
-      </button>
+      <button (click)="navigateBack()">Back</button>
+      <button type="submit" [disabled]="formGroup.invalid">Save</button>
     </div>
   </form>
 </div>
