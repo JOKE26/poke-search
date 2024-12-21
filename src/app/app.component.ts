@@ -17,23 +17,8 @@ import { MonsterService } from './services/monster/monster.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, PlayingCardComponent, SearchBarComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  monsters!: Monster[];
-  search = model('');
-
-  monsterService = inject(MonsterService);
-
-  filteredMonsters = computed(() => {
-    return this.monsters.filter((monster) =>
-      monster.name.includes(this.search())
-    );
-  });
-
-  constructor() {
-    this.monsters = this.monsterService.getAll();
-  }
-}
+export class AppComponent {}
