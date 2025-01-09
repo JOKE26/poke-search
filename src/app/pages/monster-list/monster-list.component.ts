@@ -13,11 +13,17 @@ import { SearchBarComponent } from '../../components/search-bar/search-bar.compo
 import { MonsterType } from '../../utils/monster.utils';
 import { CommonModule } from '@angular/common';
 import { MonsterService } from '../../services/monster/monster.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-monster-list',
   standalone: true,
-  imports: [CommonModule, PlayingCardComponent, SearchBarComponent],
+  imports: [
+    CommonModule,
+    PlayingCardComponent,
+    SearchBarComponent,
+    MatButtonModule,
+  ],
   templateUrl: './monster-list.component.html',
   styleUrl: './monster-list.component.css',
 })
